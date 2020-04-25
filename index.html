@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的官网</title>
+    <!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+	
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+    
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    开始搭建页面123
+    <div class="headerBox">
+        <!-- 导航 -->
+        <div class="headerBox_nav">
+            <div class="uk-position-relative">
+                <img src="/skin/ukv3/images/light.jpg" alt="">
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3  ; ">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="images/1_lb1.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="images/1_lb2.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="images/1_lb3.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+        
+            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+    </div>
+    
 </body>
 </html>
