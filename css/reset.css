@@ -1,0 +1,70 @@
+/*1.初始化页面代码*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family:cursive !important; -webkit-text-size-adjust:100%;}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; font-family: cursive !important;}
+a:hover { text-decoration:none; }
+img { border:none; vertical-align:middle}
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; border-spacing:0}
+html {overflow-y: scroll;}
+
+
+
+/**************************公共样式********************************/
+
+/*2.清除浮动*/
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*3.文本省略号显示*/
+/*3.1单行显示*/
+.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*3.1多行显示*/
+.ellipsis_rows{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* -webkit-line-clamp: 3; */
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+/*4.图片居中*/
+/*4.1水平居中*/
+.img{margin: 0 auto}
+.img_father{text-align: center}
+/*4.2垂直居中*/
+.img{postion:absolute;left:50%;top:50%;margin-top:-50px;margin-left:-50px;}
+.img_father{line-height: 30px}
+
+
+/* 上移动画 */
+.hover{
+  position: relative;
+  top: 0;
+  transition:top 1s;
+}
+.hover:hover{
+  top:-10px;
+}
+
+
+
+.box_title{
+  text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.border_lr{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}

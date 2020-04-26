@@ -1,14 +1,316 @@
-*{padding: 0%;margin: 0;}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background: #F8F8F8;
+}
 
+/* 头部轮播 */
 .headerBox{
     position: relative;
 }
-
 
 .headerBox_nav{
     position: absolute;
     left: 0%;
     top: 0;
     z-index: 100;
-    color: aliceblue;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    height: 80px;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.headerBox_nav .logoBox{
+    width: 200px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.headerBox_nav .logo{
+    height: 40px;
+    margin: 20px auto;
+}
+.headerBox_nav>.uk-position-relative{
+    margin: 0 200px;
+}
+.uk-navbar-nav>li>a{
+    color: #dfdfdf;
+}
+.uk-navbar-nav>li>a:active, .uk-navbar-nav>li>a:focus{
+    color: aqua;
+}
+.uk-navbar-nav>li.uk-active>a{
+    color: aqua;
+}
+.uk-navbar-nav>li:hover>a{
+    color: aqua;
+}
+.headerBox_nav .uk-navbar-nav>li>a{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 30px;
+}
+.headerBox_nav .uk-navbar-dropdown-nav>li>a{
+    line-height: 30px;
+}
+.uk-navbar-dropdown-nav>li:hover>a{
+    color: aqua;
+}
+.headerBox_nav_btn{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+.headerBox_nav_btn a{
+    display: inline-block;
+    width: 150px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    color: aqua;
+    text-align: center;
+}
+.headerBox_nav_btn a:hover{
+    background: aqua;
+    color: #fff;
+}
+.wheelPlanting .wheelPlanting_box{
+    color: #fff;
+}
+.wheelPlanting .wheelPlanting_box .color_0{
+    color: #000 !important;
+}
+.wheelPlanting .wheelPlanting_box span{
+    font-size: 16px;
+}
+.wheelPlanting .wheelPlanting_box h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+.wheelPlanting .wheelPlanting_box p{
+    font-size: 18px;
+}
+
+/* 业务卡片 */
+.businessBox{
+    background: #fff;
+    padding: 80px 0;
+}
+.businessBox .uk-card{
+    width: 33.333%;
+    float: left;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.businessBox .uk-card>img{
+    width: 70px;
+    float: left;
+}
+.businessBox .uk-card>.business_content{
+    float: left;
+    width: 65%;
+    margin-left: 20px;
+}
+.businessBox .uk-card>.business_content h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+.businessBox .uk-card>.business_content p{
+    margin-top: 10px;
+    color: rgb(156, 158, 146);
+    font-size: 14px;
+    line-height: 20px;
+}
+/* 最新案例 */
+.caseBox{
+    margin-top: 40px;
+}
+.caseBox .box_title{
+    margin: 30px 0;
+}
+.caseBox .caseBox_img{
+    width: 33.333%;
+    position: relative;
+    float: left;    
+}
+.caseBox .caseBox_img img{
+    width: 100%;
+}
+.caseBox .caseBox_img .caseBox_mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.caseBox .caseBox_img .caseBox_mask span{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.caseBox .hover .caseBox_mask{
+    opacity: 0;
+    transition:opacity 1s;
+}
+.caseBox .hover:hover .caseBox_mask{
+    opacity: 1;
+}
+/* 统计数据 */
+.statisticsBox{
+    background: #141618;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+}
+.statisticsBox>div{
+    flex-grow:1;
+}
+.statisticsBox>div p{
+    margin-bottom: 5px;
+}
+.statisticsBox>div .statisticsNum{
+    font-size: 50px;
+    font-weight: bold;
+}
+/* 客户评价 */
+.evaluateBox{
+    margin: 80px 0;
+}
+.evaluateBox .box_title span{
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #888;
+}
+.evaluateBox .evaluate_card{
+    width: 400px;
+}
+.evaluateBox .evaluate_card .evaluate_card_title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.evaluateBox .evaluate_card .evaluate_card_content{
+    font-size: 14px;
+    line-height: 20px;
+}
+.evaluateBox .evaluate_card .evaluate_card_position{
+    font-size: 16px;
+    font-weight: normal;
+}
+.evaluateBox .evaluate_card .evaluate_card_img{
+    width: 70px;
+}
+.evaluateBox .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 建站百科 */
+.encyclopediasBox{
+    height: 400px;
+    background: url('../images/1_bc.jpg') no-repeat;
+    background-attachment:fixed;
+    margin-bottom: 450px;
+}
+.encyclopediasBox .box_title{
+    color: #fff;
+    padding: 100px 0;
+}
+.encyclopediasBox .box_title span{
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.encyclopediasBox .box{
+    position: relative;
+    top: 10px;
+}
+.encyclopediasBox .encyclopedias_card{
+    padding: 75px 50px;    
+    width: 33.333%;
+    background: #fff;
+    cursor: pointer;
+    float: left;
+    box-sizing: border-box;
+}
+.encyclopediasBox .encyclopedias_card .encyclopedias_card_time{
+    color: #999;
+}
+.encyclopediasBox .encyclopedias_card .encyclopedias_card_title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.encyclopediasBox .encyclopedias_card:hover .encyclopedias_card_title{
+    color: aqua;
+}
+.encyclopediasBox .encyclopedias_card .encyclopedias_card_content{
+    -webkit-line-clamp: 2;
+    color: #999;
+}
+.encyclopediasBox .encyclopedias_card .encyclopedias_card_more{
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+}
+.encyclopediasBox .more{
+    margin-top: 100px;
+}
+.encyclopediasBox .more a{
+    display: block;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    background: aqua;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 50px auto;
+}
+/* 底部信息 */
+.footerBox{
+    background: #242628;
+    padding: 50px 0;
+}
+.footerBox .footer_content{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.footerBox .footer_content>div>img{
+    height: 60px;
+}
+.footerBox .footer_content>div{
+    margin-right: 130px;
+    color: #fff;
+}
+.footerBox .footer_content p{
+    margin-top: 10px;
+}
+.footerBox .footer_content>div.code{
+    float: right;
+    margin-right: 0;
+}
+.code img{
+    width: 100px;
 }

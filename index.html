@@ -1,71 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的官网</title>
     <!-- UIkit CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
-	
-	<!-- UIkit JS -->
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <div class="headerBox">
-        <!-- 导航 -->
-        <div class="headerBox_nav">
-            <div class="uk-position-relative">
-                <img src="/skin/ukv3/images/light.jpg" alt="">
-                <div class="uk-position-top">
-                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                        <div class="uk-navbar-center">
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li>
-                                    <a href="#">Parent</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#">Active</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li class="uk-nav-header">Header</li>
-                                            <li><a href="#">Item</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li class="uk-nav-divider"></li>
-                                            <li><a href="#">Item</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+    <section>
+        <!-- 顶部轮播，导航 -->
+        <div class="headerBox">
+            <!-- 导航 -->
+            <div class="headerBox_nav">
+                <div class="logoBox">
+                    <img class="logo" src="images/logo.png" alt="">
+                </div>
+                <div class="uk-position-relative">
+                    <div class="uk-position-top">
+                        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                            <div class="uk-navbar-center">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="#">首页</a></li>
+                                    <li>
+                                        <a href="#">全部案例</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">网站建设</a></li>
+                                                <li><a href="#">APP/小程序开发</a></li>
+                                                <li><a href="#">SEM托管</a></li>
+                                                <li><a href="#">SEO优化</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">业务服务</a></li>
+                                    <li><a href="#">关于我们</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                    <li><a href="#">新闻中心</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="headerBox_nav_btn">
+                    <a href="#1">立即咨询</a>
+                </div>
+            </div>
+
+            <!-- 轮播图 -->
+            <div class="wheelPlanting uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slideshow="autoplay: true;finite: true ">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb1.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span>WEBSITE BUILDING</span>
+                                <h1>专注于品牌网站建设</h1>
+                                <p>致力为客户提供一站式网站建设核心服务</p>
+                            </div>
                         </div>
-                    </nav>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb2.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span>WEBSITE BUILDING</span>
+                                <h1>专注于品牌网站建设</h1>
+                                <p>致力为客户提供一站式网站建设核心服务</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb3.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span class="color_0">WEBSITE BUILDING</span>
+                                <h1 class="color_0">专注于品牌网站建设</h1>
+                                <p class="color_0">致力为客户提供一站式网站建设核心服务</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                    uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                    uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+        </div>
+
+        <!-- 业务卡片 -->
+        <div class="businessBox">
+            <div class="box uk-clearfix">
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">网站建设</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
+                </div>
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">APP/小程序开发</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
+                </div>
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">H5开发</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
+                </div>
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">SEM托管</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
+                </div>
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">SEO关键词优化</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
+                </div>
+                <div class="hover uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                    <img src="images/1_business1.png" alt="">
+                    <div class="business_content">
+                        <h5 class="uk-card-title">口碑营销</h5>
+                        <p>这个主题可以完成您可能希望做的所有事情，不仅如此，它的设计精美而且使用起来非常直观。</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- 轮播图 -->
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3  ; ">
-
-            <ul class="uk-slideshow-items">
-                <li>
-                    <img src="images/1_lb1.jpg" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="images/1_lb2.jpg" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="images/1_lb3.jpg" alt="" uk-cover>
-                </li>
-            </ul>
-        
-            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-        
+        <!-- 最新案例 -->
+        <div class="caseBox">
+            <p class="box_title">最新案例</p>
+            <div class="caseBox_imgs">
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caseBox_img hover">
+                    <img src="images/1_case1.jpg" alt="">
+                    <div class="caseBox_mask">
+                        <div>
+                            <span>摄影网站</span>
+                            <p>集团公司/金融理财</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
+
+        <!-- 统计数据 -->
+        <div class="statisticsBox">
+            <div>
+                <p><span class="statisticsNum">178</span>个</p>
+                <span>大型品牌企业案例</span>
+            </div>
+            <div>
+                <p><span class="statisticsNum">178</span>个</p>
+                <span>大型品牌企业案例</span>
+            </div>
+            <div>
+                <p><span class="statisticsNum">178</span>个</p>
+                <span>大型品牌企业案例</span>
+            </div>
+            <div>
+                <p><span class="statisticsNum">178</span>个</p>
+                <span>大型品牌企业案例</span>
+            </div>
+        </div>
+
+        <!-- 客户评价 -->
+        <div class="evaluateBox">
+            <p class="box_title">客户评价 <span>我们得到了不少客户的反馈</span></p>
+            <div class="box">
+                <div class="evaluate_card uk-card uk-card-default uk-width-1-2@m">
+                    <div class="uk-card-body">
+                        <h3 class="evaluate_card_title">设计聚焦准确，重点突出</h3>
+                        <p class="evaluate_card_content">我们是一家充满激情的数字设计公司，专门提供精美且易于使用的数字设计和网站开发服务</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="uk-grid-small uk-flex-middle hover" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="evaluate_card_img uk-border-circle" src="images/1_avatar1.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="evaluate_card_position uk-card-title uk-margin-remove-bottom">熊猫科技产品总监</h3>
+                                <p class="evaluate_card_name uk-text-meta uk-margin-remove-top"><time
+                                        datetime="2016-04-01T19:00">金小六</time></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluate_card uk-card uk-card-default uk-width-1-2@m">
+                    <div class="uk-card-body">
+                        <h3 class="evaluate_card_title">设计聚焦准确，重点突出</h3>
+                        <p class="evaluate_card_content">我们是一家充满激情的数字设计公司，专门提供精美且易于使用的数字设计和网站开发服务</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="uk-grid-small uk-flex-middle hover" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="evaluate_card_img uk-border-circle" src="images/1_avatar1.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="evaluate_card_position uk-card-title uk-margin-remove-bottom">熊猫科技产品总监</h3>
+                                <p class="evaluate_card_name uk-text-meta uk-margin-remove-top"><time
+                                        datetime="2016-04-01T19:00">金小六</time></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluate_card uk-card uk-card-default uk-width-1-2@m">
+                    <div class="uk-card-body">
+                        <h3 class="evaluate_card_title">设计聚焦准确，重点突出</h3>
+                        <p class="evaluate_card_content">我们是一家充满激情的数字设计公司，专门提供精美且易于使用的数字设计和网站开发服务</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="uk-grid-small uk-flex-middle hover" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="evaluate_card_img uk-border-circle" src="images/1_avatar1.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="evaluate_card_position uk-card-title uk-margin-remove-bottom">熊猫科技产品总监</h3>
+                                <p class="evaluate_card_name uk-text-meta uk-margin-remove-top"><time
+                                        datetime="2016-04-01T19:00">金小六</time></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 建站百科 -->
+        <div class="encyclopediasBox">
+            <p class="box_title">建站百科 <span>我们得到了不少客户的反馈</span></p>
+            <div class="box uk-clearfix">
+                <div class="encyclopedias_card">
+                    <span class="encyclopedias_card_time">2019-05-15 12:15:15</span>
+                    <h4 class="encyclopedias_card_title ellipsis">一个网站的页面设计关乎响应速度，直接影响到用户的体验</h4>
+                    <p class="encyclopedias_card_content ellipsis_rows">
+                        网站设计最终的目的要能实现吸引用户体验网站，同时解决网站程序的易用性问题，符合大众习惯，以及功能性问题，给用户提供相应的服务，那可谓是好的网站设计。作为网站成功关键的一步，不妨从它做起</p>
+                    <a class="encyclopedias_card_more" href="">MORE</a>
+                </div>
+                <div class="encyclopedias_card border_lr">
+                    <span class="encyclopedias_card_time">2019-05-15 12:15:15</span>
+                    <h4 class="encyclopedias_card_title ellipsis">一个网站的页面设计关乎响应速度，直接影响到用户的体验</h4>
+                    <p class="encyclopedias_card_content ellipsis_rows">
+                        网站设计最终的目的要能实现吸引用户体验网站，同时解决网站程序的易用性问题，符合大众习惯，以及功能性问题，给用户提供相应的服务，那可谓是好的网站设计。作为网站成功关键的一步，不妨从它做起</p>
+                    <a class="encyclopedias_card_more" href="">MORE</a>
+                </div>
+                <div class="encyclopedias_card">
+                    <span class="encyclopedias_card_time">2019-05-15 12:15:15</span>
+                    <h4 class="encyclopedias_card_title ellipsis">一个网站的页面设计关乎响应速度，直接影响到用户的体验</h4>
+                    <p class="encyclopedias_card_content ellipsis_rows">
+                        网站设计最终的目的要能实现吸引用户体验网站，同时解决网站程序的易用性问题，符合大众习惯，以及功能性问题，给用户提供相应的服务，那可谓是好的网站设计。作为网站成功关键的一步，不妨从它做起</p>
+                    <a class="encyclopedias_card_more" href="">MORE</a>
+                </div>
+            </div>
+            <p class="more"><a href="">查看更多相关知识</a></p>
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="footerBox">
+            <div class="box">
+                <div class="footer_content uk-clearfix">
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <span>电话：028-01000000</span>
+                            <p>邮箱：support@baidu.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>传真：028-01001010</span>
+                            <p>地址：北京市高新区天府大道200号</p>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <div>
+                            <img src="images/ewm.png" alt="">
+                            <p>关注微信公众号</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: #aaa;">蜀ICP 00000000号 技术支持：建站公司</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
