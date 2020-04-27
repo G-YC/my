@@ -2,6 +2,67 @@
     width: 1200px;
     margin: 0 auto;
 }
+.more{
+    display: block;
+}
+.headerBox_nav_btn{
+    display: block;
+}
+.headerBox_nav{
+    display: block;
+}
+.header_sj{
+    display: none;
+}
+.wheelPlanting .wheelPlanting_box h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+@media screen and (max-width: 960px){
+    .box{
+        width: auto;
+    }
+    .footerBox .footer_content{
+        padding: 0 50px;
+    }
+    .footerBox .footer_content>div.code>div{
+        margin: 20px auto;
+        text-align: center;
+    }
+    .footerBox .box>p{
+        text-align: center;
+    }
+    .more{
+        display: none;
+    }
+    .headerBox_nav_btn{
+        display: none;
+    }
+    .header_sj{
+        height: 50px;
+        background: #141618;
+        line-height: 50px;
+        padding-left:10px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .header_sj>img{
+        height: 30px;
+    }
+    .header_sj span{
+        float: right;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .headerBox_nav{
+        display: none;
+    }
+    .wheelPlanting .wheelPlanting_box h1{
+        font-size: 25px;
+    }
+}
+
+
 body{
     background: #F8F8F8;
 }
@@ -60,9 +121,6 @@ body{
 }
 .headerBox_nav_btn{
     float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     height: 100%;
 }
@@ -75,6 +133,7 @@ body{
     border-radius: 25px;
     color: aqua;
     text-align: center;
+    margin-top: 15px;
 }
 .headerBox_nav_btn a:hover{
     background: aqua;
@@ -89,10 +148,7 @@ body{
 .wheelPlanting .wheelPlanting_box span{
     font-size: 16px;
 }
-.wheelPlanting .wheelPlanting_box h1{
-    font-size: 50px;
-    margin: 20px 0;
-}
+
 .wheelPlanting .wheelPlanting_box p{
     font-size: 18px;
 }
@@ -103,7 +159,6 @@ body{
     padding: 80px 0;
 }
 .businessBox .uk-card{
-    width: 33.333%;
     float: left;
     margin-bottom: 10px;
     display: flex;
@@ -136,9 +191,9 @@ body{
     margin: 30px 0;
 }
 .caseBox .caseBox_img{
-    width: 33.333%;
     position: relative;
     float: left;    
+    width: 33.333%;
 }
 .caseBox .caseBox_img img{
     width: 100%;
@@ -174,13 +229,15 @@ body{
     background: #141618;
     color: #fff;
     text-align: center;
-    display: flex;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
-    align-items: center;
 }
 .statisticsBox>div{
-    flex-grow:1;
+    float: left;
+    margin-top: 90px;
+}
+.statisticsBox>div:last-child{
+    margin-bottom: 90px;
 }
 .statisticsBox>div p{
     margin-bottom: 5px;
@@ -201,7 +258,7 @@ body{
     color: #888;
 }
 .evaluateBox .evaluate_card{
-    width: 400px;
+    float: left;
 }
 .evaluateBox .evaluate_card .evaluate_card_title{
     font-size: 18px;
@@ -220,8 +277,8 @@ body{
     width: 70px;
 }
 .evaluateBox .box{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 /* 建站百科 */
@@ -246,7 +303,6 @@ body{
 }
 .encyclopediasBox .encyclopedias_card{
     padding: 75px 50px;    
-    width: 33.333%;
     background: #fff;
     cursor: pointer;
     float: left;
@@ -293,16 +349,15 @@ body{
     padding: 50px 0;
 }
 .footerBox .footer_content{
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
+    /* padding: 50px 0; */
 }
 .footerBox .footer_content>div>img{
     height: 60px;
 }
 .footerBox .footer_content>div{
-    margin-right: 130px;
     color: #fff;
+    float: left;
+    padding-top: 30px;
 }
 .footerBox .footer_content p{
     margin-top: 10px;
@@ -310,6 +365,7 @@ body{
 .footerBox .footer_content>div.code{
     float: right;
     margin-right: 0;
+    padding-top: 0;
 }
 .code img{
     width: 100px;
