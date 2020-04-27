@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .introductionBox{
+            margin-bottom: 80px;
+        }
+        .introduction_content {
+            padding: 0 150px;
+            box-sizing: border-box;
+            margin: 150px auto 0;
+        }
+
+        .introduction_content>.box_title {
+            margin-bottom: 30px;
+        }
+
+        .introduction_statistics {
+            margin-bottom: 50px;
+        }
+
+        .introduction_statistics_item {
+            float: left;
+            color: #000;
+            margin-top: 50px;
+        }
+
+        .introduction_statistics_item>h4>span {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .aboutUs_team_img {
+            float: left;
+            position: relative;
+        }
+
+        .aboutUs_team_img>.aboutUs_team_mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .aboutUs_team_img img {
+            width: 100%;
+        }
+
+        .aboutUs_team_img>.aboutUs_team_mask>div>span {
+            font-size: 30px;
+        }
+
+        .aboutUs_team_img:hover>.aboutUs_team_mask {
+            opacity: 1;
+        }
+        .aboutUs_partner{
+            margin: 80px auto;
+        }
+        .aboutUs_partner_item{
+            float: left;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部，导航 -->
+    <header class="headerBox">
+        <!-- 导航手机 -->
+        <div class="header_sj">
+            <img class="logo_sj" src="images/logo.png" alt="">
+            <a href="#offcanvas-slide" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: table"></span></a>
+            <div id="offcanvas-slide" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li><a href="index.html">首页</a></li>
+                        <li class="uk-parent">
+                            <a href="">全部案例</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="case.html?1">网站建设</a></li>
+                                <li><a href="case.html?2">APP/小程序开发</a></li>
+                                <li><a href="case.html?3">SEM托管</a></li>
+                                <li><a href="case.html?4">SEO优化</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="business.html">业务服务</a></li>
+                        <li class="uk-active"><a href="">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="news.html">新闻中心</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="headerBox_nav">
+            <div class="logoBox">
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div class="uk-position-relative uk-visible@s uk-visible@m">
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="index.html">首页</a></li>
+                                <li>
+                                    <a href="">全部案例</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="case.html?1">网站建设</a></li>
+                                            <li><a href="case.html?2">APP/小程序开发</a></li>
+                                            <li><a href="case.html?3">SEM托管</a></li>
+                                            <li><a href="case.html?4">SEO优化</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="business.html">业务服务</a></li>
+                                <li class="uk-active"><a href="">关于我们</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li><a href="news.html">新闻中心</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="headerBox_nav_btn">
+                <a href="1">立即咨询</a>
+            </div>
+        </div>
+
+        <div class="header_img uk-height uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+            data-src="images/3_bg.png" uk-img>
+            <div class="tc">
+                <h1>关于我们</h1>
+                <p>About Us</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <!-- 公司简介 -->
+        <div class="introductionBox">
+            <div class="tc box introduction_content">
+                <h2 class="box_title">公司简介</h2>
+                <p>成都互联网省域名市有限公司成立于2008年,公司致力于环保，环卫成套设备的研发、制造、销售、服务、运营一体的综合性公司。公司以提供专业设备及服务为核心价值，希望通过我们的专业设备，为城市垃圾收运、生活垃圾分类提供服务。多年来公司秉承以用户为核心，在产品上不断优化升级、采取多种销售经营模式...
+                </p>
+            </div>
+            <div
+                class="introduction_statistics uk-clearfix uk-child-width-1-4@xl uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-2@s">
+                <div class="introduction_statistics_item tc hover">
+                    <h4 class="introduction_statistics_num"><span>187</span>个</h4>
+                    <span class="color">大型品牌企业案例</span>
+                </div>
+                <div class="introduction_statistics_item tc hover">
+                    <h4 class="introduction_statistics_num"><span>42</span>家</h4>
+                    <span class="color">合作服务商</span>
+                </div>
+                <div class="introduction_statistics_item tc hover">
+                    <h4 class="introduction_statistics_num"><span>184</span>个</h4>
+                    <span class="color">覆盖全国城市</span>
+                </div>
+                <div class="introduction_statistics_item tc hover">
+                    <h4 class="introduction_statistics_num"><span>999</span>+</h4>
+                    <span class="color">口碑好评</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 优秀的团队 -->
+        <div class="aboutUs_team">
+            <h2 class="box_title">优秀的团队 <span class="color">我们得到了不少客户的反馈</span></h2>
+            <div
+                class=" uk-clearfix uk-child-width-1-5@xl uk-child-width-1-5@l uk-child-width-1-2@m uk-child-width-1-2@s">
+                <div class="aboutUs_team_img">
+                    <img src="images/3_team1.jpg" alt="">
+                    <div class="aboutUs_team_mask">
+                        <div>
+                            <span>朴北北</span>
+                            <p>设计总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_team_img">
+                    <img src="images/3_team1.jpg" alt="">
+                    <div class="aboutUs_team_mask">
+                        <div>
+                            <span>朴北北</span>
+                            <p>设计总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_team_img">
+                    <img src="images/3_team1.jpg" alt="">
+                    <div class="aboutUs_team_mask">
+                        <div>
+                            <span>朴北北</span>
+                            <p>设计总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_team_img">
+                    <img src="images/3_team1.jpg" alt="">
+                    <div class="aboutUs_team_mask">
+                        <div>
+                            <span>朴北北</span>
+                            <p>设计总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_team_img">
+                    <img src="images/3_team1.jpg" alt="">
+                    <div class="aboutUs_team_mask">
+                        <div>
+                            <span>朴北北</span>
+                            <p>设计总监</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 合作伙伴 -->
+        <div class="aboutUs_partner">
+            <h2 class="box_title">合作伙伴 <span class="color">我们得到了不少客户的反馈</span></h2>
+            <div
+                class="box uk-clearfix uk-child-width-1-5@xl uk-child-width-1-5@l uk-child-width-1-5@m uk-child-width-1-1@s">
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="uk-animation-toggle aboutUs_partner_item" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                        <img src="images/3_partner1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer class="footerBox">
+        <div class="box">
+            <div
+                class="footer_content uk-clearfix uk-child-width-1-4@xl uk-child-width-1-4@l uk-child-width-1-4@m uk-child-width-1-1@s">
+                <div class="footer_item">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer_item">
+                    <div>
+                        <span>电话：028-01000000</span>
+                        <p>邮箱：support@baidu.com</p>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div>
+                        <span>传真：028-01001010</span>
+                        <p>地址：北京市高新区天府大道200号</p>
+                    </div>
+                </div>
+                <div class="code footer_item">
+                    <div>
+                        <img src="images/ewm.png" alt="">
+                        <p>关注微信公众号</p>
+                    </div>
+                </div>
+            </div>
+            <p style="color: aaa;">蜀ICP 00000000号 技术支持：建站公司</p>
+        </div>
+    </footer>
+</body>
+
+</html>

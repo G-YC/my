@@ -1,157 +1,39 @@
-.box{
-    width: 1200px;
-    margin: 0 auto;
-}
+body{
+    background: #F8F8F8;
+  }
+  
 .more{
     display: block;
-}
-.headerBox_nav_btn{
-    display: block;
-}
-.headerBox_nav{
-    display: block;
-}
-.header_sj{
-    display: none;
 }
 .wheelPlanting .wheelPlanting_box h1{
     font-size: 50px;
     margin: 20px 0;
 }
 @media screen and (max-width: 960px){
-    .box{
-        width: auto;
-    }
-    .footerBox .footer_content{
-        padding: 0 50px;
-    }
-    .footerBox .footer_content>div.code>div{
-        margin: 20px auto;
-        text-align: center;
-    }
-    .footerBox .box>p{
-        text-align: center;
-    }
     .more{
-        display: none;
-    }
-    .headerBox_nav_btn{
-        display: none;
-    }
-    .header_sj{
-        height: 50px;
-        background: #141618;
-        line-height: 50px;
-        padding-left:10px;
-        box-sizing: border-box;
-        display: block;
-    }
-    .header_sj>img{
-        height: 30px;
-    }
-    .header_sj span{
-        float: right;
-        color: #fff;
-        margin-top: 15px;
-    }
-    .headerBox_nav{
         display: none;
     }
     .wheelPlanting .wheelPlanting_box h1{
         font-size: 25px;
     }
 }
-
-
-body{
-    background: #F8F8F8;
-}
-
-/* 头部轮播 */
-.headerBox{
-    position: relative;
-}
-
-.headerBox_nav{
-    position: absolute;
-    left: 0%;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    height: 80px;
-    width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-.headerBox_nav .logoBox{
-    width: 200px;
-    float: left;
-    display: flex;
-    justify-content: center;
-}
-.headerBox_nav .logo{
-    height: 40px;
-    margin: 20px auto;
-}
-.headerBox_nav>.uk-position-relative{
-    margin: 0 200px;
-}
-.uk-navbar-nav>li>a{
-    color: #dfdfdf;
-}
-.uk-navbar-nav>li>a:active, .uk-navbar-nav>li>a:focus{
-    color: aqua;
-}
-.uk-navbar-nav>li.uk-active>a{
-    color: aqua;
-}
-.uk-navbar-nav>li:hover>a{
-    color: aqua;
-}
-.headerBox_nav .uk-navbar-nav>li>a{
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0 30px;
-}
-.headerBox_nav .uk-navbar-dropdown-nav>li>a{
-    line-height: 30px;
-}
-.uk-navbar-dropdown-nav>li:hover>a{
-    color: aqua;
-}
-.headerBox_nav_btn{
-    float: right;
-    width: 200px;
-    height: 100%;
-}
-.headerBox_nav_btn a{
-    display: inline-block;
-    width: 150px;
-    height: 46px;
-    line-height: 46px;
-    border: 1px solid aqua;
-    border-radius: 25px;
-    color: aqua;
-    text-align: center;
-    margin-top: 15px;
-}
-.headerBox_nav_btn a:hover{
-    background: aqua;
-    color: #fff;
-}
+/* 轮播图 */
 .wheelPlanting .wheelPlanting_box{
     color: #fff;
-}
-.wheelPlanting .wheelPlanting_box .color_0{
+  }
+  .wheelPlanting .wheelPlanting_box .color_0{
     color: #000 !important;
-}
-.wheelPlanting .wheelPlanting_box span{
+  }
+  .wheelPlanting .wheelPlanting_box span{
     font-size: 16px;
-}
-
-.wheelPlanting .wheelPlanting_box p{
+  }
+  
+  .wheelPlanting .wheelPlanting_box p{
     font-size: 18px;
-}
+  }
+
+
+
 
 /* 业务卡片 */
 .businessBox{
@@ -210,16 +92,14 @@ body{
     align-items: center;
     color: #fff;
     text-align: center;
+    opacity: 0;
+    transition:opacity 1s;
 }
 .caseBox .caseBox_img .caseBox_mask span{
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-}
-.caseBox .hover .caseBox_mask{
-    opacity: 0;
-    transition:opacity 1s;
 }
 .caseBox .hover:hover .caseBox_mask{
     opacity: 1;
@@ -284,7 +164,7 @@ body{
 /* 建站百科 */
 .encyclopediasBox{
     height: 400px;
-    background: url('../images/1_bc.jpg') no-repeat;
+    background: url('../images/1_bg.jpg') no-repeat;
     background-attachment:fixed;
     margin-bottom: 450px;
 }
@@ -342,31 +222,4 @@ body{
     border-radius: 40px;
     font-size: 16px;
     margin: 50px auto;
-}
-/* 底部信息 */
-.footerBox{
-    background: #242628;
-    padding: 50px 0;
-}
-.footerBox .footer_content{
-    /* padding: 50px 0; */
-}
-.footerBox .footer_content>div>img{
-    height: 60px;
-}
-.footerBox .footer_content>div{
-    color: #fff;
-    float: left;
-    padding-top: 30px;
-}
-.footerBox .footer_content p{
-    margin-top: 10px;
-}
-.footerBox .footer_content>div.code{
-    float: right;
-    margin-right: 0;
-    padding-top: 0;
-}
-.code img{
-    width: 100px;
 }
