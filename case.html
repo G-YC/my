@@ -17,7 +17,50 @@
     <script src="js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <style>
-        
+        .caseBox {
+            margin: 50px auto;
+        }
+
+        .case_nav {
+            line-height: 50px;
+        }
+
+        .case_nav::before {
+            border: none;
+        }
+
+        .case_nav a {
+            padding: 0 20px;
+            font-size: 16px;
+        }
+
+        .case_nav .uk-active>a {
+            color: aqua !important;
+            border-color: aqua !important;
+        }
+
+        .case_tab {
+            padding: 30px 0;
+        }
+        .case_tab_card>div{
+            float: left;
+            padding-left: 15px;
+        }
+        .case_tab_item{
+            border: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        .case_tab_item>p{
+            font-size: 18px;
+            margin: 15px 15px 10px;
+        }
+        .case_tab_item>span{
+            margin-left: 15px;
+        }
+        .case_tab_item>img{
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -86,7 +129,8 @@
             </div>
         </div>
 
-        <div class="header_img uk-height uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/2_bg.png" uk-img>
+        <div class="header_img uk-height uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+            data-src="images/2_bg.png" uk-img>
             <div class="tc">
                 <h1>案例中心</h1>
                 <p>Cases Center</p>
@@ -94,7 +138,67 @@
         </div>
     </header>
     <section>
-        
+        <div class="box caseBox">
+            <ul class="uk-flex-center case_nav" uk-tab>
+                <li><a href="#">网站建设</a></li>
+                <li><a href="#">APP/小程序开发</a></li>
+                <li><a href="#">SEM托管</a></li>
+                <li><a href="#">SEO优化</a></li>
+            </ul>
+
+            <ul class="uk-switcher uk-margin case_tab">
+                <li>
+                    <div class="case_tab_card uk-clearfix uk-child-width-1-3@xl uk-child-width-1-3@l uk-child-width-1-3@m uk-child-width-1-1@s">
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="case_tab_item hover">
+                                <img src="images/1_case1.jpg" alt="">
+                                <p>摄影网站</p>
+                                <span class="color">集团公司 / 金融理财</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="tc">暂无数据</li>
+                <li class="tc">暂无数据</li>
+                <li class="tc">暂无数据</li>
+                <li class="tc">暂无数据</li>
+            </ul>
+        </div>
     </section>
     <!-- 底部信息 -->
     <footer class="footerBox">

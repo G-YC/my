@@ -279,6 +279,9 @@ html {
   .newsCard{
     padding: 0 20px !important;
   }
+  .case_tab_card>div{
+    padding-right: 15px;
+}
 }
 
 /* 头部轮播 */
